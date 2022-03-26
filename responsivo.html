@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        #container {
+            border: 3px solid black;
+        }
+        /* Mobile First */
+        h1 {
+            color: purple;
+            font-size: 30px;
+        }
+
+        /*** BREAKPOINTS ***/
+
+        /* Tablets >= 768px */
+        @media screen and (min-width: 768px) {
+            h1 {
+                text-align: center;
+                color: green;
+            }
+        }
+
+        /* Desktops >= 920px */
+        @media screen and (min-width: 920px) {
+
+            /* mudar cor de fundo da página */
+            body {
+                background-color: aqua;
+            }
+
+        }
+
+        /* Telas Largas >= 1200px */
+        @media screen and (min-width: 1200px) {
+
+            /* mudar cor de fundo da página */
+            body {
+                background-color: bisque;
+            }
+
+            /* título da página alinhado à esquerda */
+            h1 {
+                text-align: left;
+            }
+
+            #container {
+                width: 100%;
+                max-width: 1100px;
+
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Meu site responsivo</h1>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi porro officiis culpa, magnam asperiores perferendis beatae qui nemo blanditiis delectus ex omnis labore odit magni? Adipisci quis recusandae placeat saepe.</p>
+    </div>
+        
+
+</body>
+
+</html>
